@@ -1,5 +1,7 @@
 package me.astronomize.dragonfruit.vector;
 
+import java.awt.Color;
+
 /**
  * <pre>
  * Vector3(float x, float y, float z)
@@ -7,7 +9,6 @@ package me.astronomize.dragonfruit.vector;
  * </pre>
  * 
  * @author astronomize
- * @since 0.00.00a
  */
 public class Vector3 {
 
@@ -22,7 +23,7 @@ public class Vector3 {
 	/**
 	 * returns the x value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getX() {
 		return this.x;
@@ -31,7 +32,7 @@ public class Vector3 {
 	/**
 	 * returns the y value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getY() {
 		return this.y;
@@ -40,7 +41,7 @@ public class Vector3 {
 	/**
 	 * returns the z value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getZ() {
 		return this.z;
@@ -50,7 +51,7 @@ public class Vector3 {
 	 * Checks if the specified vector's values are equal to the values in this
 	 * vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public boolean equals(Vector3 arg0) {
 
@@ -64,10 +65,19 @@ public class Vector3 {
 	/**
 	 * Returns this vector converted to a string.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	@Override
 	public String toString() {
 		return x + ", " + y + ", " + z;
+	}
+	
+	/**
+	 * Returns a new color with the x, y, and z values of this vector.
+	 * 
+	 * @since 0.00.01
+	 */
+	public Color toColor() {
+		return new Color(this.x, this.y, this.z);
 	}
 }
