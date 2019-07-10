@@ -20,7 +20,9 @@ public class Vector4 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the x value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -29,7 +31,9 @@ public class Vector4 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the y value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -38,7 +42,9 @@ public class Vector4 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the z value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -47,7 +53,9 @@ public class Vector4 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the w value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -56,8 +64,10 @@ public class Vector4 {
 	}
 
 	/**
+	 * <pre>
 	 * Checks if the specified vector's values are equal to the values in this
 	 * vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -71,12 +81,58 @@ public class Vector4 {
 	}
 
 	/**
+	 * <pre>
 	 * Returns this vector converted to a string.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
 	@Override
 	public String toString() {
 		return x + ", " + y + ", " + z + ", " + w;
+	}
+	
+	/**
+	 * <pre>
+	 * Adds the values of this vector onto arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector4 add(Vector4 arg0) {
+		return new Vector4(this.x + arg0.getX(), this.y + arg0.getY(), this.z + arg0.getZ(), this.w + arg0.getW());
+	}
+	
+	/**
+	 * <pre>
+	 * Subtracts the values of this vector from  arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector4 subtract(Vector4 arg0) {
+		return new Vector4(this.x - arg0.getX(), this.y - arg0.getY(), this.z + arg0.getZ(), this.w + arg0.getW());
+	}
+	
+	/**
+	 * <pre>
+	 * Divides the values of this vector from arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector4 divide(Vector4 arg0) {
+		return new Vector4(this.x / arg0.getX(), this.y / arg0.getY(), this.z + arg0.getZ(), this.w + arg0.getW());
+	}
+	
+	/**
+	 * <pre>
+	 * Multiplies the values of this vector from  arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector4 multiply(Vector4 arg0) {
+		return new Vector4(this.x * arg0.getX(), this.y * arg0.getY(), this.z + arg0.getZ(), this.w + arg0.getW());
 	}
 }
