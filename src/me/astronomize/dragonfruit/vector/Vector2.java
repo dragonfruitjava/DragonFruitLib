@@ -18,7 +18,9 @@ public class Vector2 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the x value of this vector.
+	 * <pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -27,7 +29,9 @@ public class Vector2 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the y value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -36,8 +40,10 @@ public class Vector2 {
 	}
 
 	/**
+	 * <pre>
 	 * Checks if the specified vector's values are equal to the values in this
 	 * vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -51,12 +57,58 @@ public class Vector2 {
 	}
 
 	/**
-	 * Returns this vector converted to a string.
+	 * <pre>
+	 *  Returns this vector converted to a string.
+	 * <pre>
 	 * 
 	 * @since 0.00.00
 	 */
 	@Override
 	public String toString() {
 		return x + ", " + y;
+	}
+	
+	/**
+	 * <pre>
+	 * Adds the values of this vector onto arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector2 add(Vector2 arg0) {
+		return new Vector2(this.x + arg0.getX(), this.y + arg0.getY());
+	}
+	
+	/**
+	 * <pre>
+	 * Subtracts the values of this vector from  arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector2 subtract(Vector2 arg0) {
+		return new Vector2(this.x - arg0.getX(), this.y - arg0.getY());
+	}
+	
+	/**
+	 * <pre>
+	 * Divides the values of this vector from arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector2 divide(Vector2 arg0) {
+		return new Vector2(this.x / arg0.getX(), this.y / arg0.getY());
+	}
+	
+	/**
+	 * <pre>
+	 * Multiplies the values of this vector from  arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector2 multiply(Vector2 arg0) {
+		return new Vector2(this.x * arg0.getX(), this.y * arg0.getY());
 	}
 }
