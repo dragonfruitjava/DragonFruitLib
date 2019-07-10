@@ -21,7 +21,9 @@ public class Vector3 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the x value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -30,7 +32,9 @@ public class Vector3 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the y value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -39,7 +43,9 @@ public class Vector3 {
 	}
 
 	/**
+	 * <pre>
 	 * returns the z value of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -48,8 +54,10 @@ public class Vector3 {
 	}
 
 	/**
+	 * <pre>
 	 * Checks if the specified vector's values are equal to the values in this
 	 * vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -63,7 +71,9 @@ public class Vector3 {
 	}
 
 	/**
+	 * <pre>
 	 * Returns this vector converted to a string.
+	 * </pre>
 	 * 
 	 * @since 0.00.00
 	 */
@@ -73,11 +83,57 @@ public class Vector3 {
 	}
 	
 	/**
+	 * <pre>
 	 * Returns a new color with the x, y, and z values of this vector.
+	 * </pre>
 	 * 
 	 * @since 0.00.01
 	 */
 	public Color toColor() {
 		return new Color(this.x, this.y, this.z);
+	}
+	
+	/**
+	 * <pre>
+	 * Adds the values of this vector onto arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector3 add(Vector3 arg0) {
+		return new Vector3(this.x + arg0.getX(), this.y + arg0.getY(), this.z + arg0.getZ());
+	}
+	
+	/**
+	 * <pre>
+	 * Subtracts the values of this vector from  arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector3 subtract(Vector3 arg0) {
+		return new Vector3(this.x - arg0.getX(), this.y - arg0.getY(), this.z + arg0.getZ());
+	}
+	
+	/**
+	 * <pre>
+	 * Divides the values of this vector from arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector3 divide(Vector3 arg0) {
+		return new Vector3(this.x / arg0.getX(), this.y / arg0.getY(), this.z + arg0.getZ());
+	}
+	
+	/**
+	 * <pre>
+	 * Multiplies the values of this vector from  arg0 returns a new vector with the
+	 * final results.
+	 * </pre>
+	 * @since 0.00.02
+	 */
+	public Vector3 multiply(Vector3 arg0) {
+		return new Vector3(this.x * arg0.getX(), this.y * arg0.getY(), this.z + arg0.getZ());
 	}
 }
