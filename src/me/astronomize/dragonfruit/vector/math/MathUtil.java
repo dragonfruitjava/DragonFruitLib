@@ -11,7 +11,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector2 multiply(Vector2 arg0, Vector2 arg1) {
+	public static Vector2 multiply(Vector2 arg0, Vector2 arg1) {
 		return new Vector2(arg0.getX() * arg1.getX(), arg0.getY() * arg1.getY());
 	}
 	
@@ -20,7 +20,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector3 multiply(Vector3 arg0, Vector3 arg1) {
+	public static Vector3 multiply(Vector3 arg0, Vector3 arg1) {
 		return new Vector3(arg0.getX() * arg1.getX(), arg0.getY() * arg1.getY(), arg0.getZ() * arg1.getZ());
 	}
 	
@@ -29,7 +29,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector4 multiply(Vector4 arg0, Vector4 arg1) {
+	public static Vector4 multiply(Vector4 arg0, Vector4 arg1) {
 		return new Vector4(arg0.getX() * arg1.getX(), arg0.getY() * arg1.getY(), arg0.getZ() * arg1.getZ(), arg0.getW() * arg1.getW());
 	}
 	
@@ -40,7 +40,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector2 subtract(Vector2 arg0, Vector2 arg1) {
+	public static Vector2 subtract(Vector2 arg0, Vector2 arg1) {
 		return new Vector2(arg0.getX() * arg1.getX(), arg0.getY() * arg1.getY());
 	}
 	
@@ -49,7 +49,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector3 subtract(Vector3 arg0, Vector3 arg1) {
+	public static Vector3 subtract(Vector3 arg0, Vector3 arg1) {
 		return new Vector3(arg0.getX() - arg1.getX(), arg0.getY() - arg1.getY(), arg0.getZ() - arg1.getZ());
 	}
 	
@@ -58,7 +58,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector4 subtract(Vector4 arg0, Vector4 arg1) {
+	public static Vector4 subtract(Vector4 arg0, Vector4 arg1) {
 		return new Vector4(arg0.getX() - arg1.getX(), arg0.getY() - arg1.getY(), arg0.getZ() - arg1.getZ(), arg0.getW() - arg1.getW());
 	}
 	
@@ -69,7 +69,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector2 divide(Vector2 arg0, Vector2 arg1) {
+	public static Vector2 divide(Vector2 arg0, Vector2 arg1) {
 		return new Vector2(arg0.getX() / arg1.getX(), arg0.getY() / arg1.getY());
 	}
 	
@@ -78,7 +78,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector3 divide(Vector3 arg0, Vector3 arg1) {
+	public static Vector3 divide(Vector3 arg0, Vector3 arg1) {
 		return new Vector3(arg0.getX() / arg1.getX(), arg0.getY() / arg1.getY(), arg0.getZ() / arg1.getZ());
 	}
 	
@@ -87,7 +87,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector4 divide(Vector4 arg0, Vector4 arg1) {
+	public static Vector4 divide(Vector4 arg0, Vector4 arg1) {
 		return new Vector4(arg0.getX() / arg1.getX(), arg0.getY() / arg1.getY(), arg0.getZ() / arg1.getZ(), arg0.getW() / arg1.getW());
 	}	
 	
@@ -98,7 +98,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector2 add(Vector2 arg0, Vector2 arg1) {
+	public static Vector2 add(Vector2 arg0, Vector2 arg1) {
 		return new Vector2(arg0.getX() + arg1.getX(), arg0.getY() + arg1.getY());
 	}
 	
@@ -107,7 +107,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector3 add(Vector3 arg0, Vector3 arg1) {
+	public static Vector3 add(Vector3 arg0, Vector3 arg1) {
 		return new Vector3(arg0.getX() + arg1.getX(), arg0.getY() + arg1.getY(), arg0.getZ() + arg1.getZ());
 	}
 	
@@ -116,7 +116,7 @@ public class MathUtil {
 	 * final results.
 	 * @since 0.00.01
 	 */
-	public Vector4 add(Vector4 arg0, Vector4 arg1) {
+	public static Vector4 add(Vector4 arg0, Vector4 arg1) {
 		return new Vector4(arg0.getX() + arg1.getX(), arg0.getY() + arg1.getY(), arg0.getZ() + arg1.getZ(), arg0.getW() + arg1.getW());
 	}
 	
