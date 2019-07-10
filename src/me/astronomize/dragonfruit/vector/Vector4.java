@@ -7,7 +7,6 @@ package me.astronomize.dragonfruit.vector;
  * </pre>
  * 
  * @author astronomize
- * @since 0.00.00a
  */
 public class Vector4 {
 
@@ -23,7 +22,7 @@ public class Vector4 {
 	/**
 	 * returns the x value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getX() {
 		return this.x;
@@ -32,7 +31,7 @@ public class Vector4 {
 	/**
 	 * returns the y value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getY() {
 		return this.y;
@@ -41,7 +40,7 @@ public class Vector4 {
 	/**
 	 * returns the z value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getZ() {
 		return this.z;
@@ -50,7 +49,7 @@ public class Vector4 {
 	/**
 	 * returns the w value of this vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public float getW() {
 		return this.w;
@@ -60,7 +59,7 @@ public class Vector4 {
 	 * Checks if the specified vector's values are equal to the values in this
 	 * vector.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	public boolean equals(Vector4 arg0) {
 
@@ -74,7 +73,7 @@ public class Vector4 {
 	/**
 	 * Returns this vector converted to a string.
 	 * 
-	 * @since 0.00.00a
+	 * @since 0.00.00
 	 */
 	@Override
 	public String toString() {
